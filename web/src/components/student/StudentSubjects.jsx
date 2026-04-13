@@ -1,8 +1,8 @@
 // web/src/components/student/StudentSubjects.jsx
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from '.././shared/hooks/useAuth';
-import { getSubjectsByDeptSemester, getChaptersBySubjectPhase } from '.././shared/firebase/firestore';
+import { useAuth } from '../../shared/hooks/useAuth';
+import { getSubjectsByDeptSemester, getChaptersBySubjectPhase } from '../../shared/firebase/firestore';
 
 const PHASES = ['T1', 'T2', 'T3', 'T4'];
 const DIFFICULTIES = ['Easy', 'Medium', 'Hard'];
@@ -149,3 +149,8 @@ export default function StudentSubjects() {
     </div>
   );
 }
+
+
+
+
+

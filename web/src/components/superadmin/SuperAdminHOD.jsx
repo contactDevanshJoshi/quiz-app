@@ -1,6 +1,6 @@
 // web/src/components/superadmin/SuperAdminHOD.jsx
 import React, { useEffect, useState } from 'react';
-import { getDepartments, setDepartmentHOD, addDepartment } from '.././shared/firebase/firestore';
+import { getDepartments, setDepartmentHOD, addDepartment } from '../../shared/firebase/firestore';
 
 const DEFAULT_DEPARTMENTS = [
   'Computer Science', 'Electronics', 'Mechanical', 'Civil', 'Chemical'
@@ -136,3 +136,8 @@ export default function SuperAdminHOD() {
     </div>
   );
 }
+
+
+
+
+

@@ -1,7 +1,7 @@
 // web/src/components/superadmin/SuperAdminLayout.jsx
 import React from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
-import { useAuth } from '.././shared/hooks/useAuth';
+import { useAuth } from '../../shared/hooks/useAuth';
 
 export default function SuperAdminLayout() {
   const { logout } = useAuth();
@@ -22,3 +22,8 @@ export default function SuperAdminLayout() {
     </div>
   );
 }
+
+
+
+
+

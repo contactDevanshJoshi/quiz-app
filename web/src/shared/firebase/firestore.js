@@ -280,3 +280,5 @@ export function shuffleAndPick(arr, n = 10) {
   const shuffled = [...arr].sort(() => Math.random() - 0.5);
   return shuffled.slice(0, n);
 }
+
+

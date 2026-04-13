@@ -1,8 +1,8 @@
 // web/src/components/student/StudentQuiz.jsx
 import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { useAuth } from '.././shared/hooks/useAuth';
-import { getQuestions, saveScore, shuffleAndPick } from '.././shared/firebase/firestore';
+import { useAuth } from '../../shared/hooks/useAuth';
+import { getQuestions, saveScore, shuffleAndPick } from '../../shared/firebase/firestore';
 
 const OPTIONS = ['A', 'B', 'C', 'D'];
 
@@ -208,3 +208,8 @@ export default function StudentQuiz() {
     </div>
   );
 }
+
+
+
+
+

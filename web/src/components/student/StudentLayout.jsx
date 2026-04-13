@@ -1,7 +1,7 @@
 // web/src/components/student/StudentLayout.jsx
 import React from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
-import { useAuth } from '.././shared/hooks/useAuth';
+import { useAuth } from '../../shared/hooks/useAuth';
 
 export default function StudentLayout() {
   const { user, logout } = useAuth();
@@ -42,3 +42,8 @@ export default function StudentLayout() {
     </div>
   );
 }
+
+
+
+
+

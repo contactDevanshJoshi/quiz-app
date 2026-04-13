@@ -1,8 +1,8 @@
 // web/src/pages/LoginGateway.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useAuth } from './shared/hooks/useAuth';
-import { loginStudent, loginAdmin, loginTeacher, loginSuperAdmin } from './shared/firebase/firestore';
+import { useAuth } from '../shared/hooks/useAuth';
+import { loginStudent, loginAdmin, loginTeacher, loginSuperAdmin } from '../shared/firebase/firestore';
 
 const roles = [
   { key: 'student',    label: 'Student',     icon: '🎓', desc: 'Login with enrollment number' },
@@ -122,3 +122,8 @@ export default function LoginGateway() {
     </div>
   );
 }
+
+
+
+
+

@@ -1,7 +1,7 @@
 // web/src/App.jsx
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from '../../shared/hooks/useAuth';
+import { AuthProvider, useAuth } from './shared/hooks/useAuth';
 import './styles/global.css';
 
 // Auth pages
@@ -90,3 +90,6 @@ export default function App() {
     </AuthProvider>
   );
 }
+
+
+
