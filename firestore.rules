@@ -1,0 +1,54 @@
+// firestore.rules
+// Deploy with: firebase deploy --only firestore:rules
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Students: readable by anyone authenticated via custom logic
+    // In production, use Firebase Auth tokens instead of plain passwords
+    match /students/{enrollmentNo} {
+      allow read: if true;    // Custom auth: client checks password in app
+      allow write: if true;   // Restrict to admin in production
+    }
+
+    match /admins/{adminId} {
+      allow read: if true;
+      allow write: if false;  // Only writable via Firebase Console or Cloud Function
+    }
+
+    match /teachers/{teacherId} {
+      allow read, write: if true;
+    }
+
+    match /superadmins/{saId} {
+      allow read: if true;
+      allow write: if false;
+    }
+
+    match /departments/{deptId} {
+      allow read, write: if true;
+    }
+
+    match /subjects/{subjectId} {
+      allow read, write: if true;
+    }
+
+    match /chapters/{chapterId} {
+      allow read, write: if true;
+    }
+
+    match /questions/{questionId} {
+      allow read, write: if true;
+    }
+
+    match /scores/{scoreId} {
+      allow read, write: if true;
+    }
+  }
+}
+
+// NOTE: These are permissive rules for development.
+// For production, tighten rules using Firebase Auth UID checks.
+// Example production rule:
+//   allow write: if request.auth != null && request.auth.token.role == 'admin';
