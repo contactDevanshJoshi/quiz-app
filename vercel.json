@@ -1,5 +1,12 @@
 {
-  "buildCommand": "cd web && npm install && npm run build",
-  "outputDirectory": "web/build",
-  "installCommand": "cd web && npm install"
+  "version": 2,
+  "builds": [
+    {
+      "src": "web/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ]
 }
