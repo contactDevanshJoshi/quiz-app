@@ -3,8 +3,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import Papa from 'papaparse';
 import {
   getAllStudents, addStudent, updateStudent, deleteStudent, promoteStudent, bulkAddStudents
-} from '../../../../shared/firebase/firestore';
-import { toCSV, downloadCSV, studentTemplateCSV } from '../../../../shared/utils/csv';
+} from '.././shared/firebase/firestore';
+import { toCSV, downloadCSV, studentTemplateCSV } from '.././shared/utils/csv';
 
 const DEPARTMENTS = ['Computer Science', 'Electronics', 'Mechanical', 'Civil', 'Chemical'];
 const SEMESTERS = [1,2,3,4,5,6,7,8];

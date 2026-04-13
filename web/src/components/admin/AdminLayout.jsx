@@ -1,7 +1,7 @@
 // web/src/components/admin/AdminLayout.jsx
 import React from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
-import { useAuth } from '../../../../shared/hooks/useAuth';
+import { useAuth } from '.././shared/hooks/useAuth';
 
 export default function AdminLayout() {
   const { logout } = useAuth();

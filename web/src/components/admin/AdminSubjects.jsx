@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import {
   getAllSubjects, addSubject, deleteSubject,
   getChaptersBySubject, addChapter, deleteChapter
-} from '../../../../shared/firebase/firestore';
+} from '.././shared/firebase/firestore';
 
 const DEPARTMENTS = ['Computer Science', 'Electronics', 'Mechanical', 'Civil', 'Chemical'];
 const SEMESTERS = [1,2,3,4,5,6,7,8];

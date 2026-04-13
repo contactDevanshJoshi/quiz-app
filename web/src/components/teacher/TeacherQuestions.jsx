@@ -1,12 +1,12 @@
 // web/src/components/teacher/TeacherQuestions.jsx
 import React, { useEffect, useState, useRef } from 'react';
 import Papa from 'papaparse';
-import { useAuth } from '../../../../shared/hooks/useAuth';
+import { useAuth } from '.././shared/hooks/useAuth';
 import {
   getAllSubjects, getChaptersBySubject, getQuestionsBySubject,
   addQuestion, updateQuestion, deleteQuestion, bulkAddQuestions
-} from '../../../../shared/firebase/firestore';
-import { downloadCSV, questionTemplateCSV } from '../../../../shared/utils/csv';
+} from '.././shared/firebase/firestore';
+import { downloadCSV, questionTemplateCSV } from '.././shared/utils/csv';
 
 const DIFFICULTIES = ['Easy', 'Medium', 'Hard'];
 const PHASES = ['T1','T2','T3','T4'];

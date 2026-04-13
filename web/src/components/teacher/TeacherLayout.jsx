@@ -1,7 +1,7 @@
 // web/src/components/teacher/TeacherLayout.jsx
 import React from 'react';
 import { Outlet, NavLink, useNavigate } from 'react-router-dom';
-import { useAuth } from '../../../../shared/hooks/useAuth';
+import { useAuth } from '.././shared/hooks/useAuth';
 
 export default function TeacherLayout() {
   const { user, logout } = useAuth();

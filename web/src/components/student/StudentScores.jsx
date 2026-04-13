@@ -1,7 +1,7 @@
 // web/src/components/student/StudentScores.jsx
 import React, { useEffect, useState } from 'react';
-import { useAuth } from '../../../../shared/hooks/useAuth';
-import { getStudentScores } from '../../../../shared/firebase/firestore';
+import { useAuth } from '.././shared/hooks/useAuth';
+import { getStudentScores } from '.././shared/firebase/firestore';
 
 export default function StudentScores() {
   const { user } = useAuth();

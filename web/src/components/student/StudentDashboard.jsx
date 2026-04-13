@@ -1,7 +1,7 @@
 // web/src/components/student/StudentDashboard.jsx
 import React, { useEffect, useState } from 'react';
-import { useAuth } from '../../../../shared/hooks/useAuth';
-import { getDepartment, getStudentScores } from '../../../../shared/firebase/firestore';
+import { useAuth } from '.././shared/hooks/useAuth';
+import { getDepartment, getStudentScores } from '.././shared/firebase/firestore';
 
 export default function StudentDashboard() {
   const { user } = useAuth();

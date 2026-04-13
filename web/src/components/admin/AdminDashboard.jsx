@@ -1,6 +1,6 @@
 // web/src/components/admin/AdminDashboard.jsx
 import React, { useEffect, useState } from 'react';
-import { getAllStudents, getAllSubjects, getAllTeachers } from '../../../../shared/firebase/firestore';
+import { getAllStudents, getAllSubjects, getAllTeachers } from '.././shared/firebase/firestore';
 
 export default function AdminDashboard() {
   const [counts, setCounts] = useState({ students: 0, subjects: 0, teachers: 0 });

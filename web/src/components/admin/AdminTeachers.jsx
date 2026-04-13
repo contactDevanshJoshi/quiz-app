@@ -1,6 +1,6 @@
 // web/src/components/admin/AdminTeachers.jsx
 import React, { useEffect, useState } from 'react';
-import { getAllTeachers, addTeacher, updateTeacher, deleteTeacher, getAllSubjects } from '../../../../shared/firebase/firestore';
+import { getAllTeachers, addTeacher, updateTeacher, deleteTeacher, getAllSubjects } from '.././shared/firebase/firestore';
 
 const emptyForm = { name: '', username: '', password: '', subjectIds: [] };
 

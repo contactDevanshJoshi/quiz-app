@@ -1,6 +1,6 @@
 // web/src/components/superadmin/SuperAdminDashboard.jsx
 import React, { useEffect, useState } from 'react';
-import { getDepartments, getAllStudents } from '../../../../shared/firebase/firestore';
+import { getDepartments, getAllStudents } from '.././shared/firebase/firestore';
 
 export default function SuperAdminDashboard() {
   const [depts, setDepts] = useState([]);

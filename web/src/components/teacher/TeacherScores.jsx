@@ -1,8 +1,8 @@
 // web/src/components/teacher/TeacherScores.jsx
 import React, { useEffect, useState } from 'react';
-import { useAuth } from '../../../../shared/hooks/useAuth';
-import { getAllSubjects, getScoresBySubject } from '../../../../shared/firebase/firestore';
-import { toCSV, downloadCSV } from '../../../../shared/utils/csv';
+import { useAuth } from '.././shared/hooks/useAuth';
+import { getAllSubjects, getScoresBySubject } from '.././shared/firebase/firestore';
+import { toCSV, downloadCSV } from '.././shared/utils/csv';
 
 export default function TeacherScores() {
   const { user } = useAuth();

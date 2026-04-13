@@ -1,7 +1,7 @@
 // web/src/components/teacher/TeacherDashboard.jsx
 import React, { useEffect, useState } from 'react';
-import { useAuth } from '../../../../shared/hooks/useAuth';
-import { getScoresBySubject, getAllSubjects, getQuestionsBySubject } from '../../../../shared/firebase/firestore';
+import { useAuth } from '.././shared/hooks/useAuth';
+import { getScoresBySubject, getAllSubjects, getQuestionsBySubject } from '.././shared/firebase/firestore';
 
 export default function TeacherDashboard() {
   const { user } = useAuth();
