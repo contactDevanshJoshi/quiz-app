@@ -188,8 +188,3 @@ export default function AdminStudents() {
     </div>
   );
 }
-
-
-
-
-

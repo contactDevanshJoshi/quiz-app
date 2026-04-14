@@ -40,8 +40,3 @@ export default function SuperAdminDashboard() {
     </div>
   );
 }
-
-
-
-
-

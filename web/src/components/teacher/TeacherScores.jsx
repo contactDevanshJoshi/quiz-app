@@ -120,8 +120,3 @@ export default function TeacherScores() {
     </div>
   );
 }
-
-
-
-
-

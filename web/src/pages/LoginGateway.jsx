@@ -122,8 +122,3 @@ export default function LoginGateway() {
     </div>
   );
 }
-
-
-
-
-

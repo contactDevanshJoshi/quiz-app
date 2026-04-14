@@ -98,8 +98,3 @@ export default function StudentScores() {
     </div>
   );
 }
-
-
-
-
-

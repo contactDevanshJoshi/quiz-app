@@ -247,8 +247,3 @@ export default function TeacherQuestions() {
     </div>
   );
 }
-
-
-
-
-

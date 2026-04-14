@@ -22,8 +22,3 @@ export default function SuperAdminLayout() {
     </div>
   );
 }
-
-
-
-
-

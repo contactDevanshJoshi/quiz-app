@@ -179,8 +179,3 @@ export default function AdminSubjects() {
     </div>
   );
 }
-
-
-
-
-

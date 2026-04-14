@@ -149,8 +149,3 @@ export default function StudentSubjects() {
     </div>
   );
 }
-
-
-
-
-
